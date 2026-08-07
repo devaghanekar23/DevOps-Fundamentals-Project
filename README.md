@@ -17,7 +17,7 @@ The project demonstrates the deployment of a static website on an **AWS Ubuntu E
 | **Batch Code** | Jun2026-A529 |
 | **Institute** | IT Vedant |
 | **Course** | DevOps Fundamentals |
-| **Submission Date** | 02 August 2026 |
+| **Submission Date** | 08 August 2026 |
 
 ---
 
