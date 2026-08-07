@@ -1,0 +1,15 @@
+Linux stores logs in
+# cd /var/log
+
+Failed Login
+#sudo grep "Failed password" /var/log/auth.log
+
+SSH Login
+#sudo grep "Accepted" /var/log/auth.log
+
+System Error
+#sudo grep -i error /var/log/syslog
+
+Warnings
+#sudo grep -i warning /var/log/syslog
+
