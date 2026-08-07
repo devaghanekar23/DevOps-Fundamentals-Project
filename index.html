@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Project - Devendra Ghanekar</title>
+  <!-- Stylish Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #f0f2f5, #ffffff);
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+      animation: fadeInDown 1.2s ease;
+    }
+    header .subtitle {
+      font-size: 20px;
+      opacity: 0.9;
+      font-weight: 400;
+      font-style: italic;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    /* Info Card */
+    .info-card {
+      background: #fff;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 18px;
+    }
+    .info-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    .info-card h2 {
+      color: #2575fc;
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+    }
+    .info-card ul {
+      list-style: none;
+    }
+    .info-card li {
+      margin-bottom: 14px;
+    }
+    .info-card strong {
+      color: #6a11cb;
+    }
+
+    /* Message Section */
+    .message {
+      text-align: center;
+      margin: 30px auto;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      padding: 18px;
+      border-radius: 12px;
+      max-width: 550px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      font-family: 'Raleway', sans-serif;
+      animation: pulse 2s infinite;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: #fff;
+      margin-top: 50px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+      .info-card {
+        margin: 20px;
+        padding: 20px;
+      }
+      .message {
+        font-size: 18px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>DevOps Project</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="info-card">
+      <h2>Project Information</h2>
+      <ul>
+        <li><strong>Project Title:</strong> DevOps Project</li>
+        <li><strong>Student Name:</strong> Devendra Ghanekar</li>
+        <li><strong>Batch Code:</strong> Jun2026-A529</li>
+        <li><strong>Date:</strong> 30 July 2026</li>
+      </ul>
+    </section>
+
+    <section class="message">
+      <p>"Hosted on AWS Ubuntu Server"</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 DevOps Project | Designed by Devendra Ghanekar</p>
+  </footer>
+</body>
+</html>
