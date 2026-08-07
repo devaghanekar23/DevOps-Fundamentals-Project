@@ -8,7 +8,7 @@ Disk check
  df -h
 
 Users check
- # who
+ # whoami
 
 Processes check
  # ps aux
