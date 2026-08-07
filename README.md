@@ -1,56 +1,57 @@
-# Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
+# 🚀 Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
 
-## 📌 Project Overview
+## 📖 Project Overview
 
-This project was completed as part of the **IT Vedant DevOps Fundamentals** course. The objective was to understand and implement the core concepts of DevOps by deploying a static website on an **AWS Ubuntu EC2 instance**.
+This project was completed as part of the **IT Vedant DevOps Fundamentals** course. The objective of this project was to gain hands-on experience with cloud infrastructure, Linux server administration, website deployment, version control, and automation.
 
-The project demonstrates cloud infrastructure setup, Linux server administration, Git & GitHub version control, Apache web server configuration, Bash scripting, and Linux system monitoring. It simulates the daily responsibilities of a **Junior DevOps Engineer**.
-
----
-
-## 👨‍🎓 Project Information
-
-| Details             | Information                                                                    |
-| ------------------- | ------------------------------------------------------------------------------ |
-| **Project Title**   | Cloud-Based Linux Server Deployment with GitHub Version Control and Automation |
-| **Student Name**    | Devendra Ghanekar                                                              |
-| **Batch Code**      | Jun2026-A529                                                                   |
-| **Institute**       | IT Vedant                                                                      |
-| **Course**          | DevOps Fundamentals                                                            |
-| **Submission Date** | 02 August 2026                                                                 |
+The project demonstrates the deployment of a static website on an **AWS Ubuntu EC2 Instance** using the **Apache Web Server**, while implementing **Git & GitHub** for version control and **Bash scripts** for automation and system monitoring.
 
 ---
 
-# 🚀 Project Objectives
+# 👨‍🎓 Project Information
 
-* Configure AWS Cloud Infrastructure.
-* Create a Custom VPC.
-* Create a Public Subnet.
-* Configure an Internet Gateway.
-* Configure a Route Table.
-* Configure Security Groups.
-* Launch an Ubuntu EC2 Instance.
-* Install Apache Web Server.
-* Deploy a Static Website.
-* Use Git and GitHub for Version Control.
-* Develop Bash Automation Scripts.
-* Monitor Linux System Logs.
-* Prepare Professional Technical Documentation.
+| Details | Information |
+|---------|-------------|
+| **Project Title** | Cloud-Based Linux Server Deployment with GitHub Version Control and Automation |
+| **Student Name** | Devendra Ghanekar |
+| **Batch Code** | Jun2026-A529 |
+| **Institute** | IT Vedant |
+| **Course** | DevOps Fundamentals |
+| **Submission Date** | 02 August 2026 |
 
 ---
 
-# 🏗️ AWS Infrastructure
+# 🎯 Project Objectives
 
-The following AWS services were used:
+- Configure AWS Cloud Infrastructure.
+- Create a Custom VPC.
+- Create a Public Subnet.
+- Configure an Internet Gateway.
+- Configure a Route Table.
+- Configure Security Groups.
+- Launch an Ubuntu EC2 Instance.
+- Connect securely using SSH.
+- Install Apache Web Server.
+- Deploy a Static Website.
+- Manage source code using Git & GitHub.
+- Develop Bash Automation Scripts.
+- Monitor Linux System Logs.
+- Prepare Professional Technical Documentation.
 
-* Amazon VPC
-* Public Subnet
-* Internet Gateway
-* Route Table
-* Security Group
-* Ubuntu EC2 Instance
+---
 
-### Infrastructure Flow
+# ☁️ AWS Infrastructure
+
+The following AWS services were used during the project:
+
+- Amazon VPC
+- Public Subnet
+- Internet Gateway
+- Route Table
+- Security Group
+- Ubuntu EC2 Instance
+
+## Infrastructure Flow
 
 ```text
 Internet
@@ -78,38 +79,40 @@ Static Website
 
 # 🖥️ Ubuntu Server Configuration
 
-Update the server
+## Update the Server
 
 ```bash
 sudo apt update -y
 sudo apt upgrade -y
 ```
 
-Install Apache
+## Install Required Packages
+
+### Apache
 
 ```bash
 sudo apt install apache2 -y
 ```
 
-Install Git
+### Git
 
 ```bash
 sudo apt install git -y
 ```
 
-Install Curl
+### Curl
 
 ```bash
 sudo apt install curl -y
 ```
 
-Install Vim
+### Vim
 
 ```bash
 sudo apt install vim -y
 ```
 
-Verify installations
+## Verify Installation
 
 ```bash
 git --version
@@ -123,21 +126,19 @@ sudo systemctl status apache2
 
 # 🌐 Website Deployment
 
-The website was deployed using the Apache Web Server.
-
-Copy project files
+Copy website files to Apache web directory.
 
 ```bash
 sudo cp -r * /var/www/html/
 ```
 
-Restart Apache
+Restart Apache Service.
 
 ```bash
 sudo systemctl restart apache2
 ```
 
-Access the website
+Access the website using:
 
 ```text
 http://<EC2-Public-IP>
@@ -145,39 +146,39 @@ http://<EC2-Public-IP>
 
 ---
 
-# 📂 Git & GitHub
+# 📂 Git & GitHub Commands
 
-Initialize Git
+Initialize Git Repository
 
 ```bash
 git init
 ```
 
-Check remote
+Check Remote Repository
 
 ```bash
 git remote -v
 ```
 
-Add remote repository
+Add Remote Repository
 
 ```bash
 git remote add origin <repository-url>
 ```
 
-Add files
+Add Files
 
 ```bash
 git add .
 ```
 
-Commit changes
+Commit Changes
 
 ```bash
 git commit -m "Initial Project Deployment"
 ```
 
-Push code
+Push to GitHub
 
 ```bash
 git push -u origin main
@@ -187,47 +188,42 @@ git push -u origin main
 
 # ⚙️ Bash Automation Scripts
 
-## 1. Health Check Script
+## 1️⃣ health-check.sh
 
-**health-check.sh**
+This script monitors:
 
-Checks:
-
-* CPU Usage
-* Memory Usage
-* Disk Usage
-* Logged-in Users
-* Running Processes
-* Server Uptime
+- CPU Usage
+- Memory Usage
+- Disk Usage
+- Logged-in Users
+- Running Processes
+- Server Uptime
 
 ---
 
-## 2. Apache Monitoring Script
-
-**apache-monitor.sh**
+## 2️⃣ apache-monitor.sh
 
 Features:
 
-* Checks Apache Service Status
-* Automatically Restarts Apache if Stopped
-* Displays Service Status
+- Checks Apache Service Status
+- Automatically Restarts Apache if Stopped
+- Displays Service Status
 
 ---
 
-## 3. Backup Script
-
-**backup.sh**
+## 3️⃣ backup.sh
 
 Features:
 
-* Compresses Website Files
-* Creates Timestamped Backup
-* Stores Backup Inside Backup Directory
+- Compresses Website Files
+- Creates Timestamped Backup
+- Stores Backup Inside the Backup Directory
 
 ---
 
 # 📁 Project Structure
 
+```text
 DevOps-Fundamentals-Project/
 │
 ├── .git/
@@ -235,9 +231,11 @@ DevOps-Fundamentals-Project/
 │   └── DevOps_Fundamentals_Project_Report.pdf
 │
 ├── screenshots/
-│   ├── aws-vpc.png pdf
+│   ├── aws-vpc.png
 │   ├── ec2-instance.png
-│   └── website-output.png
+│   ├── apache-running.png
+│   ├── website-output.png
+│   └── github-repository.png
 │
 ├── apache-monitor.sh
 ├── backup.sh
@@ -245,50 +243,56 @@ DevOps-Fundamentals-Project/
 ├── index.html
 ├── README.md
 └── log-report.txt
-
-# 🛠️ Technologies Used
-
-* AWS EC2
-* Amazon VPC
-* Ubuntu Linux
-* Apache2
-* Git
-* GitHub
-* Bash Scripting
-* SSH
-* Linux Commands
+```
 
 ---
 
-# 🎯 Learning Outcomes
+# 🛠️ Technologies Used
+
+- Amazon Web Services (AWS)
+- Amazon EC2
+- Amazon VPC
+- Ubuntu Linux
+- Apache2 Web Server
+- Git
+- GitHub
+- Bash Scripting
+- SSH
+- Linux Commands
+
+---
+
+# 📚 Learning Outcomes
 
 Through this project, I gained practical experience in:
 
-* AWS Cloud Infrastructure
-* Linux Administration
-* Apache Web Server Configuration
-* Git & GitHub Version Control
-* Bash Scripting
-* Linux Log Monitoring
-* Website Deployment
-* Basic DevOps Practices
+- AWS Cloud Infrastructure
+- Linux Server Administration
+- Apache Web Server Configuration
+- Website Deployment
+- Git & GitHub Version Control
+- Bash Scripting
+- Linux Log Monitoring
+- Basic DevOps Practices
 
 ---
 
 # ✅ Conclusion
 
-This project provided hands-on experience with cloud infrastructure, Linux server administration, website deployment, version control, and automation. I successfully configured an AWS Ubuntu server, deployed a website using Apache, managed source code with Git and GitHub, and created Bash scripts for system monitoring and backups.
+This project provided practical exposure to cloud infrastructure, Linux server administration, website deployment, version control, and automation. I successfully configured an AWS Ubuntu EC2 instance, deployed a static website using Apache, managed source code with Git and GitHub, and developed Bash scripts for server monitoring and backup automation.
 
-The project strengthened my understanding of DevOps fundamentals and improved my practical skills for a Junior DevOps Engineer role.
+This project strengthened my understanding of DevOps fundamentals and enhanced my practical skills required for a Junior DevOps Engineer role.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Devendra Ghanekar**
 
-**Course:** DevOps Fundamentals
+- **Course:** DevOps Fundamentals
+- **Institute:** IT Vedant
+- **Batch:** Jun2026-A529
 
-**Institute:** IT Vedant
+---
 
-**Batch:** Jun2026-A529
+⭐ **If you found this project helpful, consider giving it a star on GitHub!**
