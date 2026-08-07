@@ -228,18 +228,23 @@ Features:
 
 # 📁 Project Structure
 
-```text
 DevOps-Fundamentals-Project/
 │
-├── index.html
-├── health-check.sh
+├── .git/
+├── documentation/
+│   └── DevOps_Fundamentals_Project_Report.pdf
+│
+├── screenshots/
+│   ├── aws-vpc.png pdf
+│   ├── ec2-instance.png
+│   └── website-output.png
+│
 ├── apache-monitor.sh
 ├── backup.sh
+├── health-check.sh
+├── index.html
 ├── README.md
-└── Backup/
-```
-
----
+└── log-report.txt
 
 # 🛠️ Technologies Used
 
